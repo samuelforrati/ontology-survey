@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      /* Por padrão, aspect-ratio é 16:9 */
+      .iframe-container {
+        aspect-ratio: 16 / 9;
+        max-height: 600px;
+      }
+
+      /* Quando a tela está na vertical, mudar para 1:1 */
+      @media (orientation: portrait) {
+        .iframe-container {
+          aspect-ratio: 1 / 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-8"> 
+          <div class="iframe-container"> 
+            <iframe 
+              src="https://wordwall.net/embed/play/72339/195/492" 
+              allowfullscreen 
+              style="width: 100%; height: 100%; border: none;"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

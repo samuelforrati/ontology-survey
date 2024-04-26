@@ -1,3 +1,46 @@
+                /* Alinhar margens e espaçamentos */
+      .uniform-spacing {
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .progress-bar {
+        transition: width 0.5s; /* Para suavizar a animação do progresso */
+      }
+
+      /* Ajustes de layout para alinhamento de elementos */
+      .aligned {
+        margin-bottom: 1rem; /* Use margens uniformes para consistência */
+      }
+          
+          /* Remover margens entre elementos */
+          .container {
+            margin-bottom: 0;
+          }
+          .iframe-container {
+            aspect-ratio: 16 / 9;
+            max-height: 600px;
+          }
+          @media (orientation: portrait) {
+            .iframe-container {
+              aspect-ratio: 1 / 1;
+            }
+          }
+    
+    /* Por padrão, aspect-ratio é 16:9 */
+      .iframe-container {
+        aspect-ratio: 16 / 9;
+        max-height: 600px;
+      }
+
+      /* Quando a tela está na vertical, mudar para 1:1 */
+      @media (orientation: portrait) {
+        .iframe-container {
+          aspect-ratio: 1 / 1;
+        }
+      }
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
